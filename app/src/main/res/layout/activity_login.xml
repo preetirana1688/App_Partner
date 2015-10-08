@@ -1,0 +1,60 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.apppartner.androidprogrammertest.LoginActivity"
+    android:background="@drawable/bg_login">
+
+
+
+    <!--<include layout="@layout/toolbar"/>-->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginEditText"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/graphic_input"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="20dp"
+        android:text=" username"
+        android:textSize="30dp"
+        android:onClick="onClickUsernameEditText"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" password"
+        android:textSize="30dp"
+        android:id="@+id/passEditText"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/graphic_input"
+        android:layout_marginBottom="20dp"
+        android:onClick="onClickPassEditText"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_login"
+        android:onClick="onLoginClick"
+        android:layout_marginTop="120dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:id="@+id/resultTextView"
+        android:text=" "
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/graphic_input"
+        android:visibility="invisible"/>
+
+
+</LinearLayout>
